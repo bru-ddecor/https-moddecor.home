@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body{
+    background-image: url(8bbec612-3c81-4f9a-9442-f76ec1f26863.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.background-blur {
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background: rgba(255, 255, 255, 0.001);
+backdrop-filter: blur(10px);
+z-index: -1;
+
+opacity:0;
+transition: opacity 2.5s ease-in-out, backdrop-filter 4s ease-in-out;
+transition-delay: 0.3s;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    
+    width: 60%; /* Largura do retângulo (pode ajustar) */
+    max-width: 1000px; /* Define um limite de largura */
+    height: 600px; /* Altura do retângulo */
+    
+    background: rgba(255, 255, 255, 0.1); /* Fundo transparente */
+    backdrop-filter: blur(10px); /* Efeito de vidro fosco */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 0 150px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto dentro do retângulo */
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Move o elemento exatamente para o centro */
+
+    box-sizing: border-box; /* 🔹 Faz o padding NÃO aumentar o tamanho total */
+}
+
+
+/*h1{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 70px;
+}*/
+.p1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-style: normal;
+  }
+  .p2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    font-style: normal;
+  }
+  .logo {
+    width: 450px;  /* Defina um tamanho fixo */
+    height: auto;  /* Mantém a proporção */
+    display: block;
+    margin: 0 auto;
+
+  }
+  .element2 {
+    position: fixed;
+    right: -50px;  /* Distância da borda direita */
+    top: 75%;    /* Alinha ao centro vertical */
+    transform: translateY(-50%);  /* Corrige o alinhamento certinho */
+    width: 500px;  /* Define a largura */
+    height: auto;  /* Mantém a proporção da altura automática */
+
+  }
